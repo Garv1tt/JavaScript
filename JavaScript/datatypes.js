@@ -6,5 +6,5 @@
 
 // console.log("Garvit"); console.log(4 + 4) but this is not good as it is not properly readable, thus the correct way is
 
-console.log(4 + 4)
+console.log(4 + 3)
 console.log("Garvit")
