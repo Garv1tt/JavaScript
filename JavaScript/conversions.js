@@ -24,5 +24,23 @@ booleanloggedin4 = Boolean(isloggedin4)
 
 let somenumber = 33
 stringnumber = String(somenumber)
-console.log(stringnumber);
-console.log(typeof stringnumber);
+// console.log(stringnumber);
+// console.log(typeof stringnumber);
+
+
+// ***********************************Operations**********************************************************
+
+
+
+// console.log(2%3)
+// we can also add two different string variables 
+let str1 = "Hello,"
+let str2 = " World!"
+let str3 = str1 + str2
+// console.log(str3);
+
+
+// console.log("1" + 2);
+// this will show logical error as in this case 1 is treated as a string and 2 as a number and they cannot be added if they are not if same datatype thus the output will be 12 and not 3
+// MAGICCC
+// as per my observation if the first digit is string then it treates the whole braket as a string if a number then it adds all the number with themselves and concatenate with the string but if both the number has a string in between then they dont add up and only concatenate
