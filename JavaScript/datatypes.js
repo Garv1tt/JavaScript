@@ -15,10 +15,10 @@
 // its two types are primitive and non premitive it is based on how data is saved into the memory and its access
 
 
-// PREMITIVE(7 types)
+// PREMITIVE(7 types) its memory type is stack and changes in its copy only changes the copy and not the original value
 // strings, number, boolean, symbol, bigint, null, undefined
 
-// REFERENCE(3 types)
+// REFERENCE(3 types) its memory type is heap and changes in its copy changes the whole value ie it is implimented into the original value
 // array, object, function
 // array is same as lists in python and object is same as dictionary in python
 
