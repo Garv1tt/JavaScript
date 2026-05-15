@@ -14,4 +14,24 @@ if (true) {
 
 
 
+function one(){
+    const username = "Garvit"
+    function two(){
+        const surname = "Jain"
+        // console.log(username);        
+    }
+    // console.log(surname);
+    two()
+}
+one()
+// same for if statement
 
+
+if (true){
+    username = "Garvit Jain"
+    if (true) {
+        const website = "youtube"
+        // console.log(username);
+        
+    }
+}
