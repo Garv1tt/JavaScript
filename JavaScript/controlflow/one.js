@@ -46,3 +46,16 @@
 // }
 
 // NOTE->for every conditions to be true we use && and if everyone is true then only the code runs but in or we use || in which if any one ofthe following conditions are true the code will run
+// there is also an operator called nullish coalescing operator(??) which deals in null and undefined values.for eg if the computer has to choose between null,undefined and a value then it will give the number as a result to avoid errors
+
+let val1;
+// val1 = undefined ?? 10
+// val1 = null ?? 10
+val1 = null ?? undefined
+// console.log(val1);
+// terniary operator
+//  syntax --> condition ? true: false
+
+const icprice = 100
+icprice >=800 ? console.log("more than 80") : console.log("less than 80");
+
