@@ -35,3 +35,6 @@ if (true){
         
     }
 }
+
+// var --> global scope
+// const and let --> local scope
