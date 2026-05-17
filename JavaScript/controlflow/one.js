@@ -57,5 +57,5 @@ val1 = null ?? undefined
 //  syntax --> condition ? true: false
 
 const icprice = 100
-icprice >=800 ? console.log("more than 80") : console.log("less than 80");
+icprice >=700 ? console.log("more than 80") : console.log("less than 80");
 
