@@ -67,20 +67,46 @@ const coding = ["Flash","Superman","BatMan","Spiderman"]
 
 // array of object
 
-const mycoding = [{
-    languagename: 'JavaScript',
-    languagefilename: 'js'
-},
-{
-    languagename: 'Python',
-    languagefilename: 'py'
-},
-{
-    languagename: 'Java',
-    languagefilename: 'java'
-}
-]
-mycoding.forEach((item) => {
-    console.log(item.languagename);
+// const mycoding = [{
+//     languagename: 'JavaScript',
+//     languagefilename: 'js'
+// },
+// {
+//     languagename: 'Python',
+//     languagefilename: 'py'
+// },
+// {
+//     languagename: 'Java',
+//     languagefilename: 'java'
+// }
+// ]
+// mycoding.forEach((item) => {
+//     console.log(item.languagename);
     
+// })
+
+// in foreach loop we cannot   return the value like this
+
+// const ccoding = ["Flash","Superman","BatMan","Spiderman"]
+// const values = ccoding.forEach((item) => {
+//         // console.log(item);
+//         return item;
+// })
+// console.log(values);
+
+// thats why we use filter so that we can return the values
+const Num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+//     const NewNum = Num.filter((num) => {
+//         return num % 2 != 0
+//     })
+//     console.log(NewNum)
+    
+// but when we put the condition inside an object then we have to returnthe value or else it will not print
+// tricky method to store values from return value with foreach
+MyNum = []
+Num.forEach((num) => {
+    if(num%2==0){
+        MyNum.push(num)    
+    }
 })
+ console.log(MyNum);
