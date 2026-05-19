@@ -1,4 +1,4 @@
-// const mynum = [1,2,3,4,5]
+// const mynums = [1,2,3,4,5]
 // const mytotal = mynum.reduce((acc,currval) => {
 //     console.log(`acc is: ${acc} and currval is: ${currval}`);
 //     return acc+currval
