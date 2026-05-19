@@ -65,7 +65,7 @@ const coding = ["Flash","Superman","BatMan","Spiderman"]
     
 // })
 
-// array of objects
+// array of object
 
 const mycoding = [{
     languagename: 'JavaScript',
