@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert('you clicked on owl')
+    // }this method was used in early days now we use addEventListener
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //         alert('youc clicked on owl')
+    // },false)this is the newer method in this we mandatory write false even if it is default for better function
+    // attachevent-used in early days instead of addEventListener
+    // also jquery-on
+    //  document.getElementById('owl').addEventListener('click', function(e){
+    //         console.log(e);
+            
+    // },false)
+    // to learn about-timestamp,defaultprevented,type,target,toelement,srcElement,Currenttarget,offset,ClientX,clientY,ScreenX,ScreenY,altkey,ctrlkey,shiftkey,keycode
+    // the false value at end is-eventbubbling
+    // true instead of false value at the end is-eventcapturing
+    //           EVENT PROPOGATION
+    // 1. EVENT BUBBLING(in this when clicked on owl specifically console log shows you clicked on owl specifically first and then the other)
+    //    document.getElementById('images').addEventListener('click', function(e){
+    //          console.log("clicked inside the ul");
+            
+    //  },false)
+    //    document.getElementById('owl').addEventListener('click', function(e){
+    //         console.log("you clicked on owl specifically");
+    //         e.stopPropagation()
+            
+    //  },false)
+    //  above stoppropogation sirf clicked on owl specifically print krta hai that means wo code ko bubbling krne se rokta hai aur console log se jo pehle aata hai sirf wohi print krta hai
+    // 2. EVENT CAPTURING(in this we use true at the end instead of false and the ony difference will be that console log will first show you clicked inside the ul and then you clicked on the owl specifically)
+    //  document.getElementById('images').addEventListener('click', function(e){
+    //         console.log("clicked inside the ul");
+    //         e.stopPropagation()
+            
+    // },true)
+    //   document.getElementById('owl').addEventListener('click', function(e){
+    //         console.log("you clicked on owl specifically");
+            
+    // },true)
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault()
+    //     console.log('clicked on google');
+        
+    // },false)this helps in just clicking something and to check if they are working properly like here after we pressed on google link we didnt redirect to the google website this was because of the preventdeafult method
+
+//    to remove the image after clicking on it
+//   document.querySelector('#images').addEventListener
+//   ('click', function(e){
+//     console.log(e.target.tagName);
+//    if (e.target.tagName === 'IMG') {
+//     console.log(e.target.tagName);
+//     let removeit = e.target.parentNode
+//     removeit.remove()
+//     }
+//   })this will only remove the image when clicked and if clicked on any LI it will not remove all the images like what it was doing before
+</script>
+</html>
