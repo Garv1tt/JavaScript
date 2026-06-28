@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PROJECT ON ASYNC</h1>
+    <button id="stop">STOP</button>
+</body>
+    
+
+<script>
+    const hello = function(){
+        
+        console.log("Hello,World!")
+    }
+    
+setTimeout(hello, 2000)
+const changeheading = function(){
+    document.querySelector('h1').innerHTML
+    = "BEST";
+
+}
+const change = setTimeout(changeheading,2000)
+// if i click on stop button then i want that there should be not any change in the heading
+document.querySelector('#stop').
+addEventListener('click',function(){
+     clearTimeout(change)
+    console.log("STOPPED");
+    
+})
+</script>
+</html>
