@@ -6,15 +6,18 @@ const RandomColor = function(){
     }
     return color;
 };
-
+let interval;
 document.querySelector('#start')
 .addEventListener('click',function(){
 function change(){
     document.body.style.backgroundColor = RandomColor();
 }
-{interval = setInterval(change, 500)}globalThis
+if (!interval) {
+    interval = setInterval(change,200)
+}
 })
 document.querySelector('#stop')
 .addEventListener('click',function(){
     clearInterval(interval)
+    interval = null;
 })
