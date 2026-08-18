@@ -14,7 +14,7 @@ form.addEventListener('submit',function(e){
         
     }
     const bmi = weight/(height*height)
-    result.innerHTML = `<span>${bmi}</span>` 
+    result.innerHTML = `<span>${bmi.toFixed(3)}</span>` 
     if(bmi<18.6){
       message.innerHTML = `<span>Underweight</span>`
     }
