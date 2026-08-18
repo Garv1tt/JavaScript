@@ -13,7 +13,7 @@ function change(){
     document.body.style.backgroundColor = RandomColor();
 }
 if (!interval) {
-    interval = setInterval(change,200)
+    interval = setInterval(change,500)
 }
 })
 document.querySelector('#stop')
